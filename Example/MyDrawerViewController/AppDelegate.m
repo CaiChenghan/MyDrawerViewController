@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MyDrawerViewController.h"
-#import "MySideViewController.h"
+#import "SideViewController.h"
 #import "MainViewController.h"
 
 @implementation AppDelegate
@@ -25,7 +25,7 @@
     /**
      *  创建侧边控制器 -- 并且赋值给抽屉
      */
-    MySideViewController *sideViewController = [[MySideViewController alloc]init];
+    SideViewController *sideViewController = [[SideViewController alloc]init];
     drawerViewController.sideController = sideViewController;
     
     /**
