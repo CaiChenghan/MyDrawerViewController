@@ -17,7 +17,7 @@ MyDrawerViewController is available through [CocoaPods](http://cocoapods.org). T
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "MyDrawerViewController"
+pod 'MyDrawerViewController', '~>0.0.1'
 ```
 
 ## Author
@@ -27,3 +27,8 @@ pod "MyDrawerViewController"
 ## License
 
 MyDrawerViewController is available under the MIT license. See the LICENSE file for more info.
+
+## 抽屉使用
+
+抽屉用法非常简单，可参考Example。主要用法代码在AppDelegate里，需要注意的是侧边栏控制器需要继承SideViewController，否则无法通过侧边栏来进行页面push。其他控制器则不需要此继承。
+侧边栏控制器在进行页面push的时候，需要通过方法 侧边控制器.drawerViewController exchangeContentViewController:目标控制器 来进行侧边到目标控制器的切换，否则无法进行页面push。

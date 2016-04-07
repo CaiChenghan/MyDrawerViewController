@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "MyDrawerViewController"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of MyDrawerViewController."
+  s.version          = "0.0.1"
+  s.summary          = "抽屉效果."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,19 +17,20 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+                        抽屉效果封装。
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/MyDrawerViewController"
+  s.homepage         = "https://github.com/CaiChenghan/MyDrawerViewController"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "蔡成汉" => "1178752402@qq.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/MyDrawerViewController.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/CaiChenghan/MyDrawerViewController.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'MyDrawerViewController/*.{h,m}'
   s.resource_bundles = {
     'MyDrawerViewController' => ['Pod/Assets/*.png']
   }

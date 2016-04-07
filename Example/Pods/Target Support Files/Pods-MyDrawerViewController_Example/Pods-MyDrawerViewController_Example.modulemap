@@ -1,0 +1,6 @@
+framework module Pods_MyDrawerViewController_Example {
+  umbrella header "Pods-MyDrawerViewController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
